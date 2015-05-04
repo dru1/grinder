@@ -1,0 +1,5 @@
+#!/bin/bash
+GRINDERPATH=`pwd`
+GRINDERPROPERTIES=$GRINDERPATH/grinder.properties
+CLASSPATH=$GRINDERPATH/lib/*:$CLASSPATH
+java -classpath $CLASSPATH net.grinder.Grinder $GRINDERPROPERTIES
